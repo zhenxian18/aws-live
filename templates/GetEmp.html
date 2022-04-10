@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Get Employee Information</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 40px;
+        }
+
+        .empInf {
+            width: 800px;
+            background-color: rgb(0, 0, 0, 6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        form {
+            padding: 15px;
+
+        }
+
+        .empid {
+            position: relative;
+            line-height: 40px;
+            border: radius 10px;
+            padding: 10 22px;
+            font-size: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="empInf">
+        <h1>Employee Information</h1>
+    </div>
+
+    <div class="main">
+
+        <center>
+            <form action="/fetchdata" autocomplete="on" method="POST">
+
+
+                <br>
+                <label class="empId"
+                    style="margin-left: 0px;margin-top: 20px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Employee
+                    ID</label><br>
+                <input class="empid" type="number" name="emp_id" autofocus size="40"><br><br>
+
+
+                <button type="submit"
+                    style="background:#F1DDBF; height: 45px; width: 200px; color:teal; size: 5; font:oblique; font-family: 'Times New Roman', Times, serif; border-radius: 15px 15px 15px 15px;">Fetch
+                    Info</button><br><br>
+
+                <button type="submit" formaction="http://3.134.115.108:80/"
+                    style="background:#F1DDBF	; height: 45px; width: 200px; color:teal; size: 5; font-family: 'Times New Roman', Times, serif; border-radius: 15px 15px 15px 15px;"
+                    method="GET">Go To Update Database Page</button>
+
+            </form>
+        </center>
+
+    </div>
+
+</body>
+
+
+
+</html>

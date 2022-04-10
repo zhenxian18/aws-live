@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0; 
+ }
+body{
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+}
+.updAtt{
+    width: 800px;
+    background-color: rgb(0, 0,0,6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.main{
+    background-color: rgb(0, 0,0,0.5);
+    width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+form{
+    padding: 30px;
+    padding-left: 160px;
+}
+.employee{
+    position: relative;
+    left: 200px;
+    top: -30px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.attStatus{
+    position: relative;
+    left: 200px;
+    top: -30px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+</style>
+</head>
+
+
+    <body>
+        <div class="updAtt"><h1>Update Attandance</h1></div>
+        <div class="main">
+
+            <form>
+                <label class="emp" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Employee</label><br> 
+                 <input class="employee" type="text" name="employee_1" ><br><br>
+
+                 <label class="attSta" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Attendance Status</label><br> 
+                 <input class="attStatus" type="text" name="attStaTus" ><br><br>
+
+                 
+                 <input type="radio" name="gender" value="male" style=" margin-left: 100px; color:  white;font-size: 18px;font-weight: 700;" >
+                 <label style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Present</label> 
+                 <input type="radio" name="gender" value="female" style="margin-left: 25px; color: white;font-size: 18px;font-weight: 700;">
+                 <label style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Absent</label><br><br>
+
+                 <button type="submit" style=" margin-left: 130px; margin-top:10px; background: #F1DDBF; height: 45px; width: 200px; color:teal; font-family: 'Times New Roman', Times, serif;border-radius: 15px 15px 15px 15px;">Update Attandance</button><br><br>
+            </form>
+
+    </body>
+</html>

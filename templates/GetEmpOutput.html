@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: antiquewhite;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.empInf{
+    width: 800px;
+    background-color: rgb(0, 0,0,6);
+    margin: auto;
+    color: #FFFFFF;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+}
+.main{
+    background-color: rgb(0, 0,0,0.5);
+    width: 800px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+}
+form{
+    padding: 30px;
+    padding-left: 160px;
+    
+}
+#name{
+    width: 100%;
+    height: 100px;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width: 125px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+.empid{
+    position: relative;
+    left: 200px;
+    top: -30px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.firstname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.lastname{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.primaryskill{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.location{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.gender{
+    position: relative;
+    left: 200px;
+    top: -37px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555; 
+}
+
+
+.image{
+    position: relative;
+    left: 124px;
+    top: -5px;
+}
+
+.hiredate{
+    position: relative;
+    left: 98px;
+    top: -5px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.salary{
+    position: relative;
+    left: 122px;
+    top: -5px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+.position{
+    position: relative;
+    left: 110px;
+    top: -5px;
+    line-height: 40px;
+    border: radius 10px;
+    padding: 0 22px;
+    font-size: 16px;
+    color: #555;
+}
+
+
+</style>
+</head>
+
+
+    <body>
+        <div class="empInf"> <h1>Employee Information</h1>   </div>
+  
+        <div class="main">
+
+          
+
+            <form>
+
+                <label class="empId" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Employee ID</label><br>
+                <br>{{ id }}<br>
+
+                <label class="fname" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">First Name</label><br> 
+                <br>{{ fname }}<br>
+            
+                <label class="lname" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Last Name</label><br>
+                <br>{{ lname }}<br>
+            
+                <label class="pskill" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Primary Skills</label><br>
+                <br>{{ Skills }}<br>
+            
+                <label class="labellocation" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Location</label><br>
+                <br>{{ location }}<br>
+                        
+                <label class="labelgender" style="margin-left: 25px;margin-top: 25px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Gender</label><br>
+                <br>{{ gender }}<br>
+            
+                <label class="labelimage" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Image</label>
+                <br>{{ image_url }}<br>
+                 
+                <label class="hire_date" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Hire Date</label>
+                <br>{{ hire_date }}<br>
+            
+                <label class="labelsalary" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Salary</label>
+                <br>{{ salary }}<br>
+            
+                <label class="labelposition" style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Position</label>
+                <br>{{ position }}><br>
+
+                <button type="submit" style=" margin-left: 120px; margin-top:-10px; background: #F1DDBF; height: 45px; width: 200px; color:teal; font-family: 'Times New Roman', Times, serif;border-radius: 15px 15px 15px 15px;">Reset</button><br><br>
+
+            </form>
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background-color: antiquewhite;
+			background-position: center;
+			background-size: cover;
+			font-family: 'Times New Roman', Times, serif;
+			margin-top: 40px;
+		}
+
+		.addEmp {
+			width: 800px;
+			background-color: rgb(0, 0, 0, 6);
+			margin: auto;
+			color: #FFFFFF;
+			padding: 10px 0px 10px 0px;
+			text-align: center;
+			border-radius: 15px 15px 0px 0px;
+		}
+
+		.main {
+			background-color: rgb(0, 0, 0, 0.5);
+			width: 800px;
+			margin: auto;
+			border-radius: 0px 0px 15px 15px;
+		}
+
+		form {
+			padding: 10px;
+			padding-left: 160px;
+			padding-bottom: 10px;
+		}
+
+		#name {
+			width: 100%;
+			height: 100px;
+		}
+
+		.name {
+			margin-left: 25px;
+			margin-top: 30px;
+			width: 125px;
+			color: white;
+			font-size: 18px;
+			font-weight: 700;
+		}
+
+		.empid {
+			position: relative;
+			left: 200px;
+			top: -30px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.firstname {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.lastname {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.primaryskill {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.location {
+			position: relative;
+			left: 200px;
+			top: -37px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.labelgender {
+			position: relative;
+			line-height: 40px;
+			border: radius 10px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.m {
+			position: relative;
+			left: 0px;
+			bottom: 39px;
+			line-height: 40px;
+			border: radius 10px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.ml {
+			position: relative;
+			left: 0px;
+			bottom: 39px;
+			line-height: 40px;
+			border: radius 10px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.f {
+			position: relative;
+			left: 0px;
+			bottom: 39px;
+			line-height: 40px;
+			border: radius 10px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.fe {
+			position: relative;
+			left: 0px;
+			bottom: 39px;
+			line-height: 40px;
+			border: radius 10px;
+			font-size: 16px;
+			color: #555;
+		}
+
+
+
+		.image {
+			position: relative;
+			left: 124px;
+			top: 0px;
+		}
+
+		.hiredate {
+			position: relative;
+			left: 98px;
+			top: 0px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.salary {
+			position: relative;
+			left: 122px;
+			top: 0px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+
+		.position {
+			position: relative;
+			left: 110px;
+			top: 0px;
+			line-height: 40px;
+			border: radius 10px;
+			padding: 0 22px;
+			font-size: 16px;
+			color: #555;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="addEmp">
+		<h1>Employee Database</h1>
+	</div>
+	<div class="main">
+		<form action="/addemp" autocomplete="on" method="POST" enctype="multipart/form-data">
+
+			<br>
+			<label class="empId"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Employee
+				ID</label><br>
+			<input class="empid" type="number" name="emp_id" autofocus size="40"><br><br>
+
+
+			<label class="fname"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">First
+				Name</label><br>
+			<input class="firstname" type="text" name="first_name"><br><br>
+
+			<label class="lname"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Last
+				Name</label><br>
+			<input class="lastname" type="text" name="last_name"><br><br>
+
+			<label class="pskill"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Primary
+				Skills</label><br>
+			<input class="primaryskill" type="text" name="pri_skill"><br><br>
+
+			<label class="labellocation"
+				style="margin-left: 25px;margin-top: 30px;width: 30px;color: white;font-size: 18px;font-weight: 700;">Location</label><br>
+			<input class="location" type="text" name="location"><br><br>
+
+			<label class="labelgender"
+				style="margin-left: 25px;margin-top: 30px;width: 20px;color: white;font-size: 18px;font-weight: 700;">Gender</label><br>
+			<input class="m" type="radio" name="gender" value="male"
+				style=" margin-left: 200px;color:  white;font-size: 18px;font-weight: 700;">
+			<label class="ml"
+				style="margin-left: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Male</label>
+			<input class="f" type="radio" name="gender" value="female"
+				style="margin-left: 25px; color: white;font-size: 18px;font-weight: 700;">
+			<label class="fe"
+				style="margin-left: 25px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Female</label><br><br>
+
+			<label class="labelimage"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Image</label>
+			<input class="image" type=file name="emp_image_file" style="height:25px;font-size:14pt;color:grey;">
+			<br><br>
+
+			<label class="hire_date"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Hire
+				Date</label>
+			<input class="hiredate" type="date" name="hire_date"> <br><br>
+
+			<label class="labelsalary"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Salary</label>
+			<input class="salary" type="text" name="salary"><br><br>
+
+			<label class="labelposition"
+				style="margin-left: 25px;margin-top: 30px;width: 125px;color: white;font-size: 18px;font-weight: 700;">Position</label>
+			<input class="position" type="text" name="position"><br><br>
+
+			<br>
+
+			<button type="submit"
+				style="background:#F1DDBF; height: 45px; width: 200px; color:teal; size: 10; font-family: 'Times New Roman', Times, serif;border-radius: 15px 15px 15px 15px;">Update
+				Database</button>
+
+			<button type="submit" formaction="/getemp"
+				style=" margin-left: 40px; margin-top:-10px; background: #F1DDBF; height: 45px; width: 200px; color:teal; font-family: 'Times New Roman', Times, serif;border-radius: 15px 15px 15px 15px;">Get
+				Employee Information</button><br><br>
+
+			<a href="/about"
+				style=" margin-left: 178px; margin-top: 20px ; position: relative;font-size: 25px;color:whitesmoke;">About
+				Us</a>
+		</form>
+
+		<br>
+
+
+
+	</div>
+
+
+	<br>
+	<br>
+</body>
+
+</html>

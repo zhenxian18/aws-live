@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Times New Roman', Times, serif;
+            margin-top: 40px;
+            margin-bottom: 40px;
+
+        }
+
+        .save {
+            width: 800px;
+            background-color: rgb(0, 0, 0, 6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.5);
+            width: 800px;
+            margin: auto;
+            border-radius: 0px 0px 15px 15px;
+        }
+
+        form {
+            padding: 15px;
+            padding-top: 20px;
+
+        }
+
+        .h2 {
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="save">
+        <h1>Save Successful</h1>
+    </div>
+
+    <div class="main">
+        <center>
+            <br><br><br>
+            <div class="h2">
+                <h2>Following Employee Has Been Added To The Database</h2>
+            </div> <br>
+            <h2 style="color: whitesmoke;">{{ name }}</h2><br>
+
+            <title>Add Emp Output</title>
+            <form action="http://3.134.115.108:80/" autocomplete="on" method="GET">
+
+                <button type="submit"
+                    style="background:#F1DDBF; height: 45px; width: 200px; color:teal; size: 5; font:oblique; font-family: 'Times New Roman', Times, serif; border-radius: 15px 15px 15px 15px;">Go
+                    Back</button><br><br>
+
+            </form>
+
+    </div>
+    </center>
+
+</body>
+
+
+</html>
